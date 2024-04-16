@@ -1,0 +1,168 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 495px;
+    margin-top: 15px;
+    margin-bottom: 95px;
+    margin-left: 42px;
+}
+
+.links-header {
+    color: #17233D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.875px;
+    /*Espaçamento entre as letras*/
+    margin-right: 32px;
+    text-decoration: none;
+    /*Retira o sublinhado dos links*/
+}
+
+button {
+    width: 124px;
+    height: 51px;
+    border-radius: 6px;
+    border: 1px solid #4CB538;
+    background: #6FBF44;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo-image {
+    /* background: orange; */
+    width: 595.18px;
+    height: 500px;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    /* background: greenyellow; */
+    margin-left: 20px;
+    display: inline-block;
+}
+
+h1 {
+    width: 582px;
+    color: #161A49;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0.596px;
+}
+
+p {
+    width: 493px;
+    color: #4B505A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    margin-top: 47px;
+    margin-bottom: 55px;
+}
+
+.link-main {
+    color: #6FBF44;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/***************************************************************************************************************************/
+/*  Responsividade                                                                                                         */
+/***************************************************************************************************************************/
+
+@media screen and (max-width: 1350px) {
+
+    /* Oculta todos os links dentro do header, exceto o botão "Sign Up" */
+    header>*:not(button) {/*seleciona todos os elementos que são filhos diretos do <header> e não são botões*/
+        display: none;
+    } 
+    
+   /* Alinha o botão à direita da tela */
+   button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    margin-bottom: 20px;    
+}
+
+    h1 {
+        width: 278px;
+        height: 60px;
+        text-align: center;
+        color: #161A49;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+    }
+
+    p {
+        width: 304px;
+        height: 165px;
+        color: #4B505A;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-image {
+        /* background: orange; */
+        width: 312px;
+        height: 288px;
+        display: block;        
+        position: absolute;
+        top: 520px;
+        /*As quatro linhas abaixo deixam o elemento .logo-image centralizado horizontalmente na tela*/
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        /* background: greenyellow; */
+        width: 304px;
+        height: 365px;
+        display: block;
+        position: absolute;
+        text-align: center; /*Centraliza tanto o texto do parágrafo quanto o link.*/
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 50px;       
+    }
+  
+}
