@@ -49,8 +49,7 @@ button {
     cursor: pointer;
 }
 
-.logo-image {
-    /* background: orange; */
+.logo-image {   
     width: 595.18px;
     height: 500px;
     display: inline-block;
@@ -62,8 +61,7 @@ img {
     height: 100%;
 }
 
-section {
-    /* background: greenyellow; */
+section {   
     margin-left: 20px;
     display: inline-block;
 }
@@ -137,8 +135,7 @@ p {
         letter-spacing: 0.5px;
     }
 
-    .logo-image {
-        /* background: orange; */
+    .logo-image {       
         width: 312px;
         height: 288px;
         display: block;        
@@ -151,8 +148,7 @@ p {
         margin-right: auto;
     }
 
-    section {
-        /* background: greenyellow; */
+    section {       
         width: 304px;
         height: 365px;
         display: block;
